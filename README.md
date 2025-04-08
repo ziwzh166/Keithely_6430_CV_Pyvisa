@@ -24,3 +24,15 @@ A Python script for cyclic voltammetry measurements using the Keithley 6430 Sub-
 - NumPy
 - Plotly
 - GPIB interface (NI-VISA or equivalent)
+
+## Usage
+
+1. Connect the Keithley 6430 via GPIB (default address: GPIB0::24::INSTR)
+2. Open [`keithley.ipynb`](keithley.ipynb) in Jupyter Notebook
+3. Configure measurement parameters:
+   ```python
+   start_voltage = -0.1  # V
+   end_voltage = 0.7    # V
+   step_voltage = 0.005 # V
+   ```
+4. Run the notebook cells sequentially and in the configuration cell change the corresponding measurement settings
